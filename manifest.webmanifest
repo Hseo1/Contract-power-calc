@@ -1,0 +1,17 @@
+{
+  "name": "계약전력 계산기",
+  "short_name": "계약전력",
+  "description": "사용 설비의 소비전력으로 필요한 계약 전력(kW)을 계산해요.",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#E9ECF8",
+  "theme_color": "#1A1463",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
