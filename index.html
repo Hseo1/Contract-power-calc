@@ -98,7 +98,7 @@ button{cursor:pointer;border:0;background:none}
 /* 일반 카드 */
 .card{background:var(--surface);border-radius:var(--r-card);padding:20px}
 .card h2{font-size:17px;font-weight:750;letter-spacing:-.01em}
-.card-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:14px}
+.card-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
 .hint{font-size:13px;color:var(--muted)}
 
 
@@ -141,9 +141,10 @@ button{cursor:pointer;border:0;background:none}
   border:2px dashed var(--line);color:var(--brand);font-weight:750;font-size:16px;
 }
 .add:active{background:var(--field)}
-.tools{display:flex;gap:6px;margin-top:10px;justify-content:center}
-.tools button{padding:8px 12px;border-radius:10px;font-size:14px;color:var(--muted)}
-.tools button:hover{color:var(--ink)}
+.head-l{display:flex;align-items:baseline;gap:8px}
+.clear{padding:7px 12px;border-radius:10px;background:var(--field);font-size:14px;font-weight:650;color:var(--muted)}
+.clear:hover,.clear:focus-visible{color:var(--ink)}
+.clear:active{background:var(--line)}
 
 
 .toast{
@@ -187,12 +188,9 @@ button{cursor:pointer;border:0;background:none}
 
   <div class="stack" style="display:grid;gap:14px">
     <section class="card">
-      <div class="card-head"><h2>사용 항목</h2><span class="hint" id="count"></span></div>
+      <div class="card-head"><div class="head-l"><h2>사용 항목</h2><span class="hint" id="count"></span></div><button class="clear" id="clear" type="button">모두 비우기</button></div>
       <div class="list" id="list"></div>
       <button class="add" id="add" type="button">항목 추가하기</button>
-      <div class="tools">
-        <button id="clear" type="button">모두 비우기</button>
-      </div>
     </section>
 
   </div>

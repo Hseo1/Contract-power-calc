@@ -1,4 +1,4 @@
-const CACHE = 'cpc-v4';
+const CACHE = 'cpc-v5';
 const SHELL = [
   './',
   './index.html',
